@@ -1,12 +1,12 @@
 package lang.object.immutable.address;
 
-// 단순한 사이드 이펙트
-public class RefMain1_1 {
+// 사이드 이펙트 해결 방안
+public class RefMain1_2 {
 
     public static void main(String[] args) {
         // 참조형 변수는 하나의 인스턴스를 공유할 수 있다.
         Address a = new Address("서울");
-        Address b = a; // 공유참조 - 사이드 이펙트 발생 가능
+        Address b = new Address("서울");
         System.out.println("a = " + a);
         System.out.println("b = " + b);
 
