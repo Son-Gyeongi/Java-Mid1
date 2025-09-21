@@ -1,5 +1,6 @@
 package lang.object.immutable.address;
 
+// 가변 클래스, 가변 객체
 public class Address {
 
     private String value;
