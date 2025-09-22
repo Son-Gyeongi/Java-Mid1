@@ -1,0 +1,29 @@
+package lang.object.immutable.address;
+
+// 불변 ImmutableAddress 클래스 사용 - 회원
+public class MemberV2 {
+
+    private String name;
+    private ImmutableAddress address;
+
+    public MemberV2(String name, ImmutableAddress address) {
+        this.name = name;
+        this.address = address;
+    }
+
+    public ImmutableAddress getAddress() {
+        return address;
+    }
+
+    public void setAddress(ImmutableAddress address) {
+        this.address = address;
+    }
+
+    @Override
+    public String toString() {
+        return "MemberV1{" +
+                "name='" + name + '\'' +
+                ", address=" + address +
+                '}';
+    }
+}
