@@ -1,4 +1,4 @@
-package lang.object.immutable.address;
+package lang.immutable.address;
 
 // 사이드 이펙트 해결 방안
 public class RefMain1_2 {

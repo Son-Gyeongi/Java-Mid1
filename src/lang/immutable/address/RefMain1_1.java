@@ -1,4 +1,4 @@
-package lang.object.immutable.address;
+package lang.immutable.address;
 
 // 단순한 사이드 이펙트
 public class RefMain1_1 {

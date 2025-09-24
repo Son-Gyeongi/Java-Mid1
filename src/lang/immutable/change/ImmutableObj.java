@@ -1,4 +1,4 @@
-package lang.object.immutable.change;
+package lang.immutable.change;
 
 /*
 불변 객체 - 값 변경

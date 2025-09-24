@@ -1,4 +1,4 @@
-package lang.object.immutable.address;
+package lang.immutable.address;
 
 /*
 불변 객체 도입

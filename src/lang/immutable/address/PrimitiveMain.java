@@ -1,4 +1,4 @@
-package lang.object.immutable.address;
+package lang.immutable.address;
 
 // 기본형과 참조형의 공유
 public class PrimitiveMain {

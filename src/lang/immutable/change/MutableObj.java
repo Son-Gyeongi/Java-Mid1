@@ -1,4 +1,4 @@
-package lang.object.immutable.change;
+package lang.immutable.change;
 
 // 변경 가능한 객체에서 값을 변경하는 간단한 예를 만든다.
 public class MutableObj {
