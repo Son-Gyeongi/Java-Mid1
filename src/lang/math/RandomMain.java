@@ -1,0 +1,36 @@
+package lang.math;
+
+import java.util.Random;
+
+// Random 클래스(java.util 패키지에 있음)
+public class RandomMain {
+
+    public static void main(String[] args) {
+        Random random = new Random();
+
+        /*
+        씨드 - Seed
+        랜덤은 내부에서 씨드값을 사용해서 랜덤 값을 구한다.
+        그런데 이 씨드 값이 같으면 항상 같은 결과가 출려된다.
+         */
+        // Random random = new Random(1); // seed가 같으면 Random의 결과가 같다.
+
+        int randomInt = random.nextInt();
+        System.out.println("randomInt: " + randomInt);
+
+
+        double randomDouble = random.nextDouble(); // 0.0d ~ 1.0d
+        System.out.println("randomDouble: " + randomDouble);
+
+        // true 또는 false 두 면이 있는 주사위, 50대50
+        boolean randomBoolean = random.nextBoolean();
+        System.out.println("randomBoolean: " + randomBoolean);
+
+        // 범위 조회
+        int randomRange1 = random.nextInt(10);// 0 ~ 9까지 출력
+        System.out.println("0 ~ 9: " + randomRange1);
+
+        int randomRange2 = random.nextInt(10) + 1;// 1 ~ 10까지 출력
+        System.out.println("1 ~ 10: " + randomRange2);
+    }
+}
