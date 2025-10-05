@@ -1,7 +1,7 @@
 package enumuration.ex2;
 
 // 타입 안전 열거형 패턴(Type-Safe Enum Pattern)
-public class StringGradeEx2_2 {
+public class ClassGradeEx2_2 {
 
     public static void main(String[] args) {
         int price = 10000;
