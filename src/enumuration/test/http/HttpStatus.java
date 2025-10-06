@@ -4,6 +4,8 @@ package enumuration.test.http;
 HTTP 상태 코드 정의
 참고: HTTP 상태 코드는 200 - 299사이의 숫자를 성공으로 인정한다.
 HTTP는 웹의 기반
+
+좋은 프로그래밍은 제약이 있는 프로그래밍
  */
 public enum HttpStatus {
     // 코드 작성
