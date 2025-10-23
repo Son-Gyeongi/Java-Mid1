@@ -10,7 +10,8 @@ public class MainV2 {
 
     public static void main(String[] args) throws NetworkClientExceptionV2 {
         // NetworkServiceV2_1 networkService = new NetworkServiceV2_1();
-        NetworkServiceV2_2 networkService = new NetworkServiceV2_2();
+        // NetworkServiceV2_2 networkService = new NetworkServiceV2_2();
+        NetworkServiceV2_3 networkService = new NetworkServiceV2_3();
 
         // 사용자 입력
         Scanner scanner = new Scanner(System.in);
