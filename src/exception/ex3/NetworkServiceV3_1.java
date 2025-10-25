@@ -1,4 +1,7 @@
-package exception.ex3.exception;
+package exception.ex3;
+
+import exception.ex3.exception.ConnectExceptionV3;
+import exception.ex3.exception.SendExceptionV3;
 
 /*
 해당 프로그램은 사용자의 입력을 받고,

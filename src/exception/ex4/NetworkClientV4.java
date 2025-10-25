@@ -1,34 +1,37 @@
-package exception.ex3.exception;
+package exception.ex4;
+
+import exception.ex4.exception.ConnectExceptionV4;
+import exception.ex4.exception.SendExceptionV4;
 
 /*
 해당 프로그램은 사용자의 입력을 받고,
 입력 받은 문자를 외부 서버에 전송하는 프로그램이다.
  */
-public class NetworkClientV3 {
+public class NetworkClientV4 {
 
     private final String address; // 접속할 외부 서버 주소
     public boolean connectError; // 실패 시뮬레이션을 위한 필드
     public boolean sendError; // 실패 시뮬레이션을 위한 필드
 
-    public NetworkClientV3(String address) {
+    public NetworkClientV4(String address) {
         this.address = address;
     }
 
     // 외부 서버에 연결
-    public void connect() throws ConnectExceptionV3 {
+    public void connect() throws ConnectExceptionV4 {
         // 연결 실패
         if (connectError) {
-            throw new ConnectExceptionV3(address, address + " 서버 연결 실패");
+            throw new ConnectExceptionV4(address, address + " 서버 연결 실패");
         }
         // 연결 성공
         System.out.println(address + " 서버 연결 성공");
     }
 
     // 연결한 외부 서버에 데이터를 전송
-    public void send(String data) throws SendExceptionV3 {
+    public void send(String data) throws SendExceptionV4 {
         // 전송 실패
         if (sendError) {
-            throw new SendExceptionV3(data, address + " 서버에 데이터 전송 실패: " + data);
+            throw new SendExceptionV4(data, address + " 서버에 데이터 전송 실패: " + data);
             // throw new RuntimeException("ex");
         }
         // 전송 성공
